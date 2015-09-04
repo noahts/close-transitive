@@ -1,9 +1,3 @@
-/**
- * Created by noahtorpsmith on 04/09/15.
- */
-
-// var _ = require('lodash');
-
 var transitiveCloseAux = function(evaluated, pending, inFun) {
   if (pending.length < 1) {
     return evaluated;
@@ -22,12 +16,7 @@ var transitiveCloseAux = function(evaluated, pending, inFun) {
   }
 };
 
-var transitiveCloseImpl = function (inFun, startInt) {
+var transitiveClose = function (inFun, startInt) {
   return transitiveCloseAux([], [startInt], inFun);
 };
 
-/*
-module.exports = {
-  transitiveClose : transitiveCloseImpl
-};
-*/
