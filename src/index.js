@@ -24,8 +24,10 @@ var transitiveCloseAux = function(evaluated, pending, inFun) {
 
 var transitiveCloseImpl = function (inFun, startInt) {
   return transitiveCloseAux([], [startInt], inFun);
-}
+};
 
+/*
 module.exports = {
   transitiveClose : transitiveCloseImpl
 };
+*/
