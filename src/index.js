@@ -2,7 +2,7 @@
  * Created by noahtorpsmith on 04/09/15.
  */
 
-var _ = require('lodash');
+// var _ = require('lodash');
 
 var transitiveCloseAux = function(evaluated, pending, inFun) {
   if (pending.length < 1) {
